@@ -32,9 +32,9 @@ const cardData = [
 
 export default function Workflow (){
     return (
-        <div className="">
+        <div className="bg-white">
             <img className="w-full" src={workflowTop} alt="workflowTop" />
-            <div className="p-10 bg-blue-50 workflow_bg">
+            <div className="p-10 custom_bg workflow_bg">
             <div className="text-center w-3/4 m-auto pb-10">
                 <h2 className=" text-lg font-normal">How it Works</h2>
                 <p className=" text-4xl font-bold">Streamlined Workflow Overview</p>

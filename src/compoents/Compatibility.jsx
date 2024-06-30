@@ -28,22 +28,25 @@ const CompatibilityList = [
 
 const Compatibility = () => {
   return (
-    <div className="py-10 fontRubik">
+    <div className="py-10 fontRubik bg-white">
       <h1 className="text-center text-lg font-normal">Compatibility</h1>
       <h1 className="text-center font-bold text-4xl">
         Support for Popular Web Browsers
       </h1>
-      <div className="flex flex-wrap justify-center px-10">
+      <div className="flex flex-wrap justify-center p-10 gap-4">
         {CompatibilityList.map((list, index) => (
-          <div className="w-1/3 text-center " key={index}>
-            <div className="bg-white h-[419px] flex flex-col justify-center items-center  shadow-md rounded-lg py-12 px-16 ">
+          <div
+            className="text-center w-96"
+            key={index}
+          >
+            <div className="bg-white h-[419px] flex flex-col justify-center items-center shadow-md rounded-lg py-12 px-16">
               <img src={list.logo} alt="logo" className="py-10" />
               <h1 className="font-medium text-2xl my-2">{list.name}</h1>
               <p className="text-gray-700">{list.details}</p>
-              <div className=" font-medium text-xl transition-transform transform hover:translate-x-4 py-5 flex flex-row">
-              <p>Read More </p>
-              <img src={arrowIcon} alt="ArrowIcon" className=" px-2 pt-1" />
-            </div>
+              <div className="font-medium text-xl transition-transform transform hover:translate-x-4 py-5 flex flex-row">
+                <p>Read More </p>
+                <img src={arrowIcon} alt="ArrowIcon" className="px-2 pt-1" />
+              </div>
             </div>
           </div>
         ))}

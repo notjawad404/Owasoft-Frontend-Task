@@ -11,7 +11,7 @@ import Workflow from './compoents/Workflow'
 function App() {
 
   return (
-    <>
+    <div>
       <Navbar/>
       <Header/>
       <Clients/>
@@ -20,7 +20,7 @@ function App() {
       <Compatibility/>
       <Analytics/>
       <Workflow/>
-    </>
+    </div>
   )
 }
 

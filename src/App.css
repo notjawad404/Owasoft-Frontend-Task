@@ -13,9 +13,8 @@
     background-position: center;
 }
 
-.featureIcon_hover:hover{
-    transform: translateY(-10px);
-    transition: transform 0.3s ease-in-out;   
+.custom_bg{
+    background-color: rgba(233, 239, 253, 1);
 }
 
 .playbook_bg{
@@ -30,3 +29,5 @@
     background-size: cover;
     background-position: center;
 }
+
+

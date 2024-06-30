@@ -4,7 +4,7 @@ import analyticIcon2 from '../assets/analyticIcon2.svg'
 
 export default function Analytics() {
   return (
-    <div className="flex flex-row py-11 px-16">
+    <div className="flex flex-row py-11 px-16 bg-white">
     <div className="w-1/2 px-10">
         <p className=" font-normal text-lg">Powerful Analytics</p>
         <h1 className=" font-bold text-4xl py-3">Effortlessly to Track all as User Analytics</h1>

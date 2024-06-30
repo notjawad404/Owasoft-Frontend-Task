@@ -16,7 +16,7 @@ const FeatureCard = ({ title, description, icon, middle }) => {
     : "shadow-md";
 
   return (
-    <div className={`w-1/3 bg-blue-50 p-4 ${middle ? "mt-8" : ""}`}>
+    <div className={`w-1/3 p-4 ${middle ? "mt-8" : ""}`}>
       <div className={`bg-white rounded-lg overflow-hidden ${cardClasses} group`}>
         <div className="pt-8 pb-10 px-5">
           <img src={icon} alt="ServicesIcon" className="py-5 transition-transform transform group-hover:-translate-y-2" />
@@ -87,12 +87,16 @@ export default function TopFeatures() {
   };
 
   return (
-    <div className="py-20">
-      <img src={featuretop} alt="featuretop" className="w-full" />
-      <div className="flex flex-wrap justify-center bg-blue-50 px-20">
+    <div className="">
+      <img src={featuretop} alt="featuretop" className="w-full bg-white" />
+      <div className="custom_bg pb-10">
+      
+
+      <div className="flex flex-wrap justify-center px-20">
         {featureCards.map((card, index) => (
           <FeatureCard key={index} {...card} />
         ))}
+      </div>
       </div>
     </div>
   );
