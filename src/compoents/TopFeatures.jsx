@@ -17,12 +17,12 @@ const FeatureCard = ({ title, description, icon, middle }) => {
 
   return (
     <div className={`w-1/3 bg-blue-50 p-4 ${middle ? "mt-8" : ""}`}>
-      <div className={`bg-white rounded-lg overflow-hidden ${cardClasses}`}>
+      <div className={`bg-white rounded-lg overflow-hidden ${cardClasses} group`}>
         <div className="pt-8 pb-10 px-5">
-          <img src={icon} alt="ServicesIcon" className="py-5" />
+          <img src={icon} alt="ServicesIcon" className="py-5 transition-transform transform group-hover:-translate-y-2" />
           <h1 className="text-2xl font-medium py-5">{title}</h1>
           <p className=" font-normal text-lg py-5">{description}</p>
-          <div className=" font-medium text-xl hover:px-7 py-5 flex flex-row">
+          <div className=" font-medium text-xl transition-transform transform hover:translate-x-4 py-5 flex flex-row">
             <p>Read More </p>
             <img src={arrowIcon} alt="ArrowIcon" className=" px-2 pt-1" />
           </div>
@@ -31,6 +31,7 @@ const FeatureCard = ({ title, description, icon, middle }) => {
     </div>
   );
 };
+
 
 export default function TopFeatures() {
   const featureCards = [

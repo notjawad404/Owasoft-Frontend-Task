@@ -40,10 +40,10 @@ const Compatibility = () => {
               <img src={list.logo} alt="logo" className="py-10" />
               <h1 className="font-medium text-2xl my-2">{list.name}</h1>
               <p className="text-gray-700">{list.details}</p>
-              <div className=" font-medium text-xl hover:mx-7 py-5 flex flex-row">
-                <p>Read More </p>
-                <img src={arrowIcon} alt="ArrowIcon" className=" px-2 pt-1" />
-              </div>
+              <div className=" font-medium text-xl transition-transform transform hover:translate-x-4 py-5 flex flex-row">
+              <p>Read More </p>
+              <img src={arrowIcon} alt="ArrowIcon" className=" px-2 pt-1" />
+            </div>
             </div>
           </div>
         ))}
