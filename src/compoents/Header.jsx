@@ -39,11 +39,11 @@ export default function Header() {
       <div className="font-semibold px-5">
       <p className=" font-semibold text-4xl">4.8/5</p>
       <div className="flex flex-row">
-        <img src={starIcon} alt=""/>
-        <img src={starIcon} alt=""/>
-        <img src={starIcon} alt=""/>
-        <img src={starIcon} alt=""/>
-        <img src={BlankstarIcon} alt=""/>
+        <img src={starIcon} alt="starIcon"/>
+        <img src={starIcon} alt="starIcon"/>
+        <img src={starIcon} alt="starIcon"/>
+        <img src={starIcon} alt="starIcon"/>
+        <img src={BlankstarIcon} alt="starIcon"/>
       <p className=" font-normal text-base">Ratings</p>
       </div>
       
