@@ -82,7 +82,7 @@ export default function TopFeatures() {
 
 
   return (
-    <div className="pt-20">
+    <div className="py-20">
     <img src={featuretop} alt='featuretop' className="w-full"/>
     <div className="flex flex-wrap justify-center bg-blue-50 px-20">
     {featureCards.map((card, index) => (

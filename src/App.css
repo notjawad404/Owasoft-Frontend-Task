@@ -12,3 +12,10 @@
     background-size: cover;
     background-position: center;
 }
+
+.playbook_bg{
+    background-image: url("./assets/playbook-bg.svg");
+     background-repeat: no-repeat;
+     background-size: cover;
+
+}
