@@ -5,7 +5,7 @@ import Clients from './compoents/Clients'
 import TopFeatures from './compoents/TopFeatures'
 import Playbooks from './compoents/Playbooks'
 import Compatibility from './compoents/Compatibility'
-import Testinomals from './compoents/Testinomals'
+import Analytics from './compoents/Analytics'
 
 function App() {
 
@@ -17,7 +17,7 @@ function App() {
       <TopFeatures/>
       <Playbooks/>
       <Compatibility/>
-      <Testinomals/>
+      <Analytics/>
     </>
   )
 }
