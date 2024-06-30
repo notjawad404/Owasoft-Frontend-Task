@@ -19,13 +19,13 @@ export default function Navbar() {
 <div className="items-center justify-between hidden w-full md:flex md:w-auto md:order-1">
   <ul className="flex flex-row ">
     <li>
-      <a href="#features" className="text-white hover:border-b-2 fontRubik font-medium text-base leading-5 gap-12 mx-10 py-3">Features</a>
+      <a href="#" className="text-white hover:border-b-2 fontRubik font-medium text-base leading-5 gap-12 mx-10 py-3">Features</a>
     </li>
     <li>
       <a href="#" className="text-white hover:border-b-2 fontRubik font-medium text-base leading-5 gap-12 mx-10 py-3">Pricing</a>
     </li>
-    <li className="relative group">
-      <a href="#" className="text-white hover:border-b-2 fontRubik font-medium text-base leading-5 gap-3 mx-10 py-3 flex items-center">
+    <li className="group ">
+      <a href="#" className="text-white hover:border-b-2 fontRubik font-medium text-base leading-5 gap-3 mx-10 pt-1 pb-3 flex items-center">
         Resources
         <span className="ml-2 transition-transform duration-200 transform group-hover:rotate-180">
           <img src={dropdownIcon} alt="dropdownIcon"/>
