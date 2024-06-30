@@ -1,7 +1,9 @@
 import './App.css'
-import Clients from './compoents/Clients'
-import Header from './compoents/Header'
 import Navbar from './compoents/Navbar'
+import Header from './compoents/Header'
+import Clients from './compoents/Clients'
+import TopFeatures from './compoents/TopFeatures'
+
 
 function App() {
 
@@ -10,6 +12,7 @@ function App() {
       <Navbar/>
       <Header/>
       <Clients/>
+      <TopFeatures/>
     </>
   )
 }
