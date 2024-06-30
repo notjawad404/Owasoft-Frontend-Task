@@ -6,6 +6,7 @@ import TopFeatures from './compoents/TopFeatures'
 import Playbooks from './compoents/Playbooks'
 import Compatibility from './compoents/Compatibility'
 import Analytics from './compoents/Analytics'
+import Workflow from './compoents/Workflow'
 
 function App() {
 
@@ -18,6 +19,7 @@ function App() {
       <Playbooks/>
       <Compatibility/>
       <Analytics/>
+      <Workflow/>
     </>
   )
 }

@@ -13,9 +13,20 @@
     background-position: center;
 }
 
+.featureIcon_hover:hover{
+    transform: translateY(-10px);
+    transition: transform 0.3s ease-in-out;   
+}
+
 .playbook_bg{
     background-image: url("./assets/playbook-bg.svg");
-     background-repeat: no-repeat;
-     background-size: cover;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 
+.workflow_bg{
+    background-image: url("./assets/workflow_bg.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
