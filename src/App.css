@@ -31,4 +31,11 @@
     background-position: center;
 }
 
+.footer_bg{
+    background-color: rgba(11, 11, 19, 1);
+    background-image: url("./assets/footerbg.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
 
