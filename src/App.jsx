@@ -8,6 +8,7 @@ import Compatibility from './compoents/Compatibility'
 import Analytics from './compoents/Analytics'
 import Workflow from './compoents/Workflow'
 import Faq from './compoents/FAQ'
+import Blogs from './compoents/Blogs'
 
 function App() {
 
@@ -22,6 +23,7 @@ function App() {
       <Analytics/>
       <Workflow/>
       <Faq/>
+      <Blogs/>
     </div>
   )
 }
