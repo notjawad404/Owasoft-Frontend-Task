@@ -10,6 +10,7 @@ import Workflow from './compoents/Workflow'
 import Faq from './compoents/FAQ'
 import Blogs from './compoents/Blogs'
 import Footer from './compoents/Footer'
+import Testimonials from './compoents/Testinomals'
 
 function App() {
 
@@ -24,6 +25,7 @@ function App() {
       <Analytics/>
       <Workflow/>
       <Faq/>
+      <Testimonials/>
       <Blogs/>
       <Footer/>
     </div>
