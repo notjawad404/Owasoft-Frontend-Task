@@ -49,7 +49,7 @@ const Testimonials = () => {
           <h2 className="text-center text-3xl font-bold pb-8">
             What Peoples Are Saying
           </h2>
-          <div className="grid SSgrid-cols-3 gap-8">
+          <div className="grid grid-cols-3 gap-8">
             {testimonials.map((testimonial, index) => (
               <div key={index} className="">
                 <div className="bg-white bg-opacity-10 p-6 rounded-xl flex flex-col">
