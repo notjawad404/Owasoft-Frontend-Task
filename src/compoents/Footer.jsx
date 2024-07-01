@@ -8,7 +8,7 @@ import socialmedia4 from '../assets/socialmedia4.svg';
 
 const Footer = () => {
   return (
-    <footer className="footer_bg text-white py-10 fontRubik">
+    <footer className="footer_bg text-white py-10 px-20 fontRubik">
       <div className="container mx-auto grid grid-cols-4 gap-10 text-xl font-normal">
         <div>
             <div className='flex flex-row gap-2'>

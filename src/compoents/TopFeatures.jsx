@@ -13,7 +13,7 @@ import servicesIcon6 from "../assets/Features/servicesIcon6.svg";
 const FeatureCard = ({ title, description, icon, middle }) => {
   const cardClasses = middle
     ? "transform translate-y-[-20%] md:translate-y-[20%] shadow-lg"
-    : "shadow-md";
+    : "shadow-l";
 
   return (
     <div className={`w-1/3 p-4 ${middle ? "mt-8" : ""}`}>
