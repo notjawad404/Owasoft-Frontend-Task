@@ -20,7 +20,7 @@ export default function Playbooks() {
 
   return (
     <div className="bg-blue-50">
-      <div className="playbook_bg pt-40 pb-72 px-16 flex flex-row">
+      <div className="playbook_bg pt-96 pb-[550px] px-16 flex flex-row">
         <div className="w-1/2">
           <img src={messageImg} alt="messageImg" />
         </div>

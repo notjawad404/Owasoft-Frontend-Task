@@ -21,6 +21,7 @@
     background-image: url("./assets/playbook-bg.svg");
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
 }
 
 .workflow_bg{

@@ -7,6 +7,7 @@ import Playbooks from './compoents/Playbooks'
 import Compatibility from './compoents/Compatibility'
 import Analytics from './compoents/Analytics'
 import Workflow from './compoents/Workflow'
+import Faq from './compoents/FAQ'
 
 function App() {
 
@@ -20,6 +21,7 @@ function App() {
       <Compatibility/>
       <Analytics/>
       <Workflow/>
+      <Faq/>
     </div>
   )
 }
