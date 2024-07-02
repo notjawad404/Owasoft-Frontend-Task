@@ -36,10 +36,10 @@ const Compatibility = () => {
       <div className="flex flex-wrap justify-center p-10 gap-4">
         {CompatibilityList.map((list, index) => (
           <div
-            className="text-center w-96 hover:shadow-md hover:shadow-slate-500"
+            className="text-center w-96  hover:shadow-lg hover:shadow-slate-500"
             key={index}
           >
-            <div className="bg-white h-[419px] flex flex-col justify-center items-center shadow-md rounded-lg py-12 px-16">
+            <div className="bg-white h-[419px] flex flex-col justify-center items-center shadow-md rounded-lg pt-12 pb-20 px-16">
               <img src={list.logo} alt="logo" className="py-10" />
               <h1 className="font-medium text-2xl my-2">{list.name}</h1>
               <p className="text-gray-700">{list.details}</p>
