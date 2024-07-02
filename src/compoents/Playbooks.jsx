@@ -20,12 +20,12 @@ export default function Playbooks() {
 
   return (
     <div className="bg-blue-50">
-      <div className="playbook_bg pt-96 pb-52 px-16 flex flex-row">
-        <div className="w-1/2">
+      <div className="playbook_bg pt-40 pb-40 lg:pt-96 lg:pb-52 px-16 flex flex-row">
+        <div className="hidden lg:flex w-0  lg:w-1/2">
           <img src={messageImg} alt="messageImg" />
         </div>
 
-        <div className="w-1/2 text-white px-4">
+        <div className=" w-full lg:w-1/2 text-white px-4">
           <p className=" text-lg">Playbooks</p>
           <h1 className=" font-bold text-4xl">
             Send the right message, at the right time

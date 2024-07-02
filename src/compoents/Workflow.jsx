@@ -6,7 +6,6 @@ import workflowIcon2 from '../assets/workflowIcon2.svg';
 import workflowIcon3 from '../assets/workflowIcon3.svg';
 import workflowIcon4 from '../assets/workflowIcon4.svg';
 
-
 const cardData = [
     {
         "title": "Sign Up",
@@ -35,24 +34,24 @@ export default function Workflow (){
         <div className="bg-white">
             <img className="w-full" src={workflowTop} alt="workflowTop" />
             <div className="p-10 custom_bg workflow_bg">
-            <div className="text-center w-3/4 m-auto pb-10">
-                <h2 className=" text-lg font-normal">How it Works</h2>
-                <p className=" text-4xl font-bold">Streamlined Workflow Overview</p>
-                <p className="text-gray-600 font-normal text-xl">Explore our intuitive platform&apos;s seamless workflow, simplifying alert creation, management, and analytics for enhanced website engagement.</p>
-            </div>
-            <div className="flex flex-row gap-5 px-10">
-                {cardData.map((card, index) => (
-                    <div key={index} className="bg-white w-1/3 pt-8 pb-10 px-5 rounded-lg shadow-md text-center">
-                        <div className="flex justify-center mb-4">
-                            <div className=" p-4">
-                                <img src={card.icon} alt="WorkflowIcons" />
+                <div className="text-center w-3/4 m-auto pb-10">
+                    <h2 className="text-lg font-normal">How it Works</h2>
+                    <p className="text-4xl font-bold">Streamlined Workflow Overview</p>
+                    <p className="text-gray-600 font-normal text-xl">Explore our intuitive platform&apos;s seamless workflow, simplifying alert creation, management, and analytics for enhanced website engagement.</p>
+                </div>
+                <div className="flex flex-wrap gap-5 justify-center">
+                    {cardData.map((card, index) => (
+                        <div key={index} className="bg-white sm:w-full md:w-1/2 lg:w-1/5 pt-8 pb-10 px-5 rounded-lg shadow-md text-center">
+                            <div className="flex justify-center mb-4">
+                                <div className="p-4">
+                                    <img src={card.icon} alt={`${card.title} Icon`} />
+                                </div>
                             </div>
+                            <h3 className="text-2xl font-medium">{card.title}</h3>
+                            <p className="text-lg font-normal">{card.description}</p>
                         </div>
-                        <h3 className=" text-2xl font-medium">{card.title}</h3>
-                        <p className=" text-lg font-normal">{card.description}</p>
-                    </div>
-                ))}
-            </div>
+                    ))}
+                </div>
             </div>
         </div>
     );

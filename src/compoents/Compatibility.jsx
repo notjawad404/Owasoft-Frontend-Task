@@ -36,7 +36,7 @@ const Compatibility = () => {
       <div className="flex flex-wrap justify-center p-10 gap-4">
         {CompatibilityList.map((list, index) => (
           <div
-            className="text-center w-96"
+            className="text-center w-96 hover:shadow-md hover:shadow-slate-500"
             key={index}
           >
             <div className="bg-white h-[419px] flex flex-col justify-center items-center shadow-md rounded-lg py-12 px-16">

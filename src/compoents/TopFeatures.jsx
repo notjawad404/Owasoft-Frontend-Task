@@ -12,26 +12,25 @@ import servicesIcon6 from "../assets/Features/servicesIcon6.svg";
 
 const FeatureCard = ({ title, description, icon, middle }) => {
   const cardClasses = middle
-    ? "transform translate-y-[-20%] md:translate-y-[20%] shadow-lg"
+    ? "transform lg:translate-y-[-20%] md:translate-y-[0%] lg:shadow-lg"
     : "shadow-l";
 
   return (
-    <div className={`w-1/3 p-4 ${middle ? "mt-8" : ""}`}>
+    <div className={`w-full md:w-1/2 lg:w-1/3 p-4`}>
       <div className={`bg-white rounded-lg overflow-hidden ${cardClasses} group`}>
         <div className="pt-8 pb-10 px-5">
           <img src={icon} alt="ServicesIcon" className="py-5 transition-transform transform group-hover:-translate-y-2" />
           <h1 className="text-2xl font-medium py-5">{title}</h1>
-          <p className=" font-normal text-lg py-5">{description}</p>
-          <div className=" font-medium text-xl transition-transform transform hover:translate-x-4 py-5 flex flex-row">
+          <p className="font-normal text-lg py-5">{description}</p>
+          <div className="font-medium text-xl transition-transform transform hover:translate-x-4 hover:text-blue-500 py-5 flex flex-row">
             <p>Read More </p>
-            <img src={arrowIcon} alt="ArrowIcon" className=" px-2 pt-1" />
+            <img src={arrowIcon} alt="ArrowIcon" className="px-2 pt-1" />
           </div>
         </div>
       </div>
     </div>
   );
 };
-
 
 export default function TopFeatures() {
   const featureCards = [
@@ -71,7 +70,7 @@ export default function TopFeatures() {
       middle: true,
     },
     {
-      title: "Rolebased User Management",
+      title: "Role-based User Management",
       description:
         "Implement role-based user management, allowing different authorization levels such as admin and user for enhanced security.",
       icon: servicesIcon6,
@@ -90,16 +89,16 @@ export default function TopFeatures() {
     <div>
       <img src={featuretop} alt="featuretop" className="w-full bg-white" />
       <div className="custom_bg pb-10">
-      <div className=" w-2/3 m-auto text-center py-10">
-      <p className=" text-lg font-normal">Top Features</p>
-      <h1 className=" text-3xl font-bold">Secure, Intuitive Alert Management with Analytics</h1>
-      <p className=" text-xl font-normal">Empower website owners with our platform&apos;s secure, intuitive alert management system, enriched with advanced analytics for insightful performance tracking.</p>
-      </div>
-      <div className="flex flex-wrap justify-center px-20">
-        {featureCards.map((card, index) => (
-          <FeatureCard key={index} {...card} />
-        ))}
-      </div>
+        <div className="w-2/3 m-auto text-center py-10">
+          <p className="text-lg font-normal">Top Features</p>
+          <h1 className="text-3xl font-bold">Secure, Intuitive Alert Management with Analytics</h1>
+          <p className="text-xl font-normal">Empower website owners with our platform&apos;s secure, intuitive alert management system, enriched with advanced analytics for insightful performance tracking.</p>
+        </div>
+        <div className="flex flex-wrap justify-center px-4 sm:px-10 md:px-20">
+          {featureCards.map((card, index) => (
+            <FeatureCard key={index} {...card} />
+          ))}
+        </div>
       </div>
     </div>
   );

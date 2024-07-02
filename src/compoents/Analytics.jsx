@@ -5,7 +5,7 @@ import analyticIcon2 from '../assets/analyticIcon2.svg'
 export default function Analytics() {
   return (
     <div className="flex flex-row py-11 px-16 bg-white">
-    <div className="w-1/2 px-10">
+    <div className=" w-full lg:w-1/2 px-10">
         <p className=" font-normal text-lg">Powerful Analytics</p>
         <h1 className=" font-bold text-4xl py-3">Effortlessly to Track all as User Analytics</h1>
         <p className='py-3'>It is a long established fact that a reader will be distracted by the readable content of a
@@ -25,7 +25,7 @@ export default function Analytics() {
         </div>
     </div>
 
-    <div className="w-1/2">
+    <div className="w-0 lg:w-1/2 hidden lg:flex">
     <img src={analyticsImg} alt="analyticsImage"/>
     </div>
     </div>
