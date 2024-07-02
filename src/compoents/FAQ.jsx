@@ -1,5 +1,4 @@
 import { useState } from "react";
-
 import "../App.css";
 import faqIcon from "../assets/faqIcon.svg";
 
@@ -44,12 +43,12 @@ export default function Faq() {
 
   return (
     <div className="flex flex-row pt-20 pb-11 px-16 fontRubik">
-      <div className="w-1/2 flex justify-center items-center">
-        <img src={faqIcon} />
+      <div className="w-0 lg:w-1/2 hidden lg:flex">
+        <img src={faqIcon} className=""/>
       </div>
-      <div className="w-1/2 p-6">
+      <div className="w-full lg:w-1/2 p-6">
         <p className="text-lg font-normal">Why Choose Us</p>
-        <h2 className=" text-3xl font-bold mb-6">
+        <h2 className="text-3xl font-bold mb-6">
           Frequently Asked Questions and Resources
         </h2>
         {faqData.map((faq, index) => (
@@ -58,7 +57,7 @@ export default function Faq() {
               className={`flex justify-between py-4 px-5 border rounded-xl ${
                 activeIndexes.includes(index)
                   ? "text-white bg-blue-700"
-                  : "bg-white text-gray-700 shadow-lg"
+                  : "bg-white text-gray-700 shadow-md"
               } focus:outline-none`}
             >
               <button
@@ -68,16 +67,22 @@ export default function Faq() {
                 {faq.question}
               </button>
               {activeIndexes.includes(index) ? (
-                <div className="text-lg font-normal">-</div>
+                <div className="text-2xl font-normal">-</div>
               ) : (
-                <div className="text-lg font-normal">+</div>
+                <div className="text-2xl font-normal">+</div>
               )}
             </div>
-            {activeIndexes.includes(index) && (
-              <div className="p-4 border bg-white text-black text-lg font-normal">
+            <div
+              className={`duration-1000 ease-linear overflow-hidden ${
+                activeIndexes.includes(index)
+                  ? "max-h-screen"
+                  : "max-h-0"
+              }`}
+            >
+              <div className="p-4 text-black text-lg font-normal">
                 {faq.answer}
               </div>
-            )}
+            </div>
           </div>
         ))}
       </div>

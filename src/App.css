@@ -33,6 +33,10 @@
     background-position: center;
 }
 
+.transition-faq {
+    transition: max-height 1s ease-in-out;
+  }
+
 .footer_bg{
     background-color: rgba(11, 11, 19, 1);
     background-image: url("./assets/footerbg.svg");

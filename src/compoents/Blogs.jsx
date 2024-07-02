@@ -39,9 +39,9 @@ export default function Blogs() {
           and website engagement.
         </p>
       </div>
-      <div className="flex flex-row gap-6 px-40">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 px-40">
         {blogsList.map((update, index) => (
-          <div key={index} className=" w=1/3 bg-white rounded-lg shadow-md">
+          <div key={index} className="w-full bg-white rounded-lg shadow-md">
             <img
               src={update.image}
               alt={update.title}
@@ -50,15 +50,15 @@ export default function Blogs() {
             <div className="p-4">
               <div className="flex flex-row mb-2">
                 <img className="px-2" src={userIcon} alt="userIcon" />
-                <span className="mr-5">{update.author}</span>
-                <img className="pl-5" src={commentIcon} alt="commentIcon" />
-                <span className="ml-2">{update.comments} Comments</span>
+                <span className="">{update.author}</span>
+                <img className="px-3" src={commentIcon} alt="commentIcon" />
+                <span className="">{update.comments} Comments</span>
               </div>
               <h3 className=" text-xl font-medium pb-5 border-b-2">
                 {update.title}
               </h3>
               <div className=" font-medium text-xl text-gray-500 transition-transform transform hover:translate-x-4 hover:text-blue-600 py-5 flex flex-row">
-                <p>Read More </p>
+                <a href="#">Read More </a>
                 <img src={arrowIcon} alt="ArrowIcon" className=" px-2 pt-1" />
               </div>
             </div>

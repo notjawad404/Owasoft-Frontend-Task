@@ -1,5 +1,6 @@
 import testimonialIcon from "../assets/testinomalIcon.svg";
 import invertedcommasIcon from "../assets/invertedcommasIcon.svg";
+import yellowstarIcon from "../assets/yellowstarIcon.svg";
 
 const testimonials = [
   {
@@ -49,11 +50,17 @@ const Testimonials = () => {
           <h2 className="text-center text-3xl font-bold pb-8">
             What Peoples Are Saying
           </h2>
-          <div className="grid grid-cols-3 gap-8">
+          <div className="grid grid-col=1 md:grid-col-2 xl:grid-cols-3 gap-8">
             {testimonials.map((testimonial, index) => (
               <div key={index} className="">
                 <div className="bg-white bg-opacity-10 p-6 rounded-xl flex flex-col">
-                  <p className="text-2xl font-normal text-yellow-400">★★★★★</p>
+                <div className="flex flex-row mb-4">
+                  <img src={yellowstarIcon} alt="star" className="w-6 h-6 mr-2" />
+                  <img src={yellowstarIcon} alt="star" className="w-6 h-6 mr-2" />
+                  <img src={yellowstarIcon} alt="star" className="w-6 h-6 mr-2" />
+                  <img src={yellowstarIcon} alt="star" className="w-6 h-6 mr-2" />
+                  <img src={yellowstarIcon} alt="star" className="w-6 h-6 mr-2" />
+                </div>
                   <p className="text-lg font-normal py-4">{testimonial.text}</p>
                   <div className="flex justify-end">
                     <img

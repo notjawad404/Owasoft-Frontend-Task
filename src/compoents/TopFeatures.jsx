@@ -89,7 +89,7 @@ export default function TopFeatures() {
     <div>
       <img src={featuretop} alt="featuretop" className="w-full bg-white" />
       <div className="custom_bg pb-10">
-        <div className="w-2/3 m-auto text-center py-10">
+        <div className="w-2/3 m-auto text-center pt-10 pb-28">
           <p className="text-lg font-normal">Top Features</p>
           <h1 className="text-3xl font-bold">Secure, Intuitive Alert Management with Analytics</h1>
           <p className="text-xl font-normal">Empower website owners with our platform&apos;s secure, intuitive alert management system, enriched with advanced analytics for insightful performance tracking.</p>
