@@ -11,8 +11,8 @@ import headerImg from "../assets/header image.svg";
 
 export default function Header() {
   return (
-    <div className="header_bg flex flex-row pt-40 pb-96">
-      <div className="text-white fontRubik w-3/5 pt-3 pb-3  px-16">
+    <div className="header_bg flex flex-row pt-32">
+      <div className="text-white fontRubik w-full lg:w-3/5 pt-3 pb-20 lg:pb-3  px-16">
         <h1 className="font-bold text-6xl leading-[71px] ">
           Maximize <span className="text-black">Engagement</span> Minimize Churn
         </h1>
@@ -79,7 +79,7 @@ export default function Header() {
         </div>
       </div>
 
-      <div className="w-2/5">
+      <div className="hidden lg:flex w-0  lg:w-2/5">
         <img
           src={headerImg}
           alt="header-Image"

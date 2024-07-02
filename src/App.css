@@ -7,11 +7,18 @@
 }
 
 .header_bg{
-    background-image: url("./assets/header_bg.png");
+    background-image: url("./assets/header_bg.svg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+height: 744.5pxpx;
+top: -3853px;
+left: -2300px;
+gap: 10px;
+opacity: 0px;
+
 }
+
 
 .custom_bg{
     background-color: rgba(233, 239, 253, 1);
