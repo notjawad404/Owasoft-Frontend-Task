@@ -32,7 +32,7 @@ export default function Clients() {
   const secondRowClients = clients.slice(5);
 
   return (
-    <div className="fontRubik bg-white pb-20">
+    <div className="fontRubik bg-white pt-10 pb-20">
       <div className="flex justify-center items-center">
         <p className="text-lg font-normal px-4">Trusted by 20,000+ clients</p>
         <img src={starIcon} alt="starIcon" />

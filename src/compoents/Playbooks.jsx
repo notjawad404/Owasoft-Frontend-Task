@@ -18,7 +18,7 @@ export default function Playbooks() {
     },
   ];
 
-  return (
+  return ( 
     <div className="bg-blue-50">
       <div className="playbook_bg pt-40 pb-40 lg:pt-96 lg:pb-52 px-16 flex flex-row">
         <div className="hidden lg:flex w-0  lg:w-1/2">
